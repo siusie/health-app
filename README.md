@@ -35,7 +35,7 @@ Before you begin, ensure you have the following installed:
 **1. Clone the Repository**
 
 ```
-git clone https://github.com/AnhChienVu/Team-06-PRJ666-Winter-2025.git
+git clone https://github.com/siusie/tummy-time.git
 
 cd your-project
 ```
@@ -116,7 +116,7 @@ Create a .env.local file in the frontend folder:
 ```
 // deployment:
 # NEXT_PUBLIC_API_URL=https://tummytime-server.onrender.com
-# NEXT_PUBLIC_CLIENT_URL=https://team-06-prj-666-winter-2025.vercel.app
+# NEXT_PUBLIC_CLIENT_URL=https://tummy-time.vercel.app
 
 // local
 NEXT_PUBLIC_API_URL=http://localhost:8080
