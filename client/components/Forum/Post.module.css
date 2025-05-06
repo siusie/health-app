@@ -1,0 +1,281 @@
+.postDetailCard {
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding-right: 160px;
+}
+
+.postTitleContainer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.postTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.postActions {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.editButton,
+.deleteButton {
+  min-width: 80px;
+}
+
+.deleteButton:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.editTitleInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.editTitleInput:focus {
+  border-color: #65558F;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(101, 85, 143, 0.25);
+}
+
+.editContentInput {
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.editButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.editActionButton {
+  min-width: 80px;
+}
+
+.postContent {
+  white-space: pre-wrap;
+  margin: 1rem 0;
+}
+
+.postMetadata {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.metadataContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editedText {
+  color: #666666;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.toastContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  min-width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.editor {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background: white;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ced4da;
+  gap: 0.5rem;
+  background-color: #f8f9fa;
+}
+
+.toolbar button {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background: white;
+  cursor: pointer;
+}
+
+.toolbar button.isActive {
+  background: #e9ecef;
+}
+
+.editorContent {
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.editorContent :global(.ProseMirror) {
+  outline: none;
+  min-height: 150px;
+}
+
+.categorySelector {
+  width: 50%;
+}
+
+.categoryBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin-left: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: #495057;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  max-width: none;
+  line-height: 1.5;
+}
+
+.microphone {
+  background: none;
+  border: none;
+  color: #6c757d;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.microphone:hover {
+  color: #495057;
+}
+
+.listeningIndicator {
+  margin-left: 0.5rem;
+  color: #dc3545;
+  font-style: italic;
+}
+
+.microphoneContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftActions {
+  display: flex;
+  align-items: center;
+}
+
+.rightActions {
+  display: flex;
+  align-items: center;
+}
+
+.backButton {
+  text-decoration: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.bookmarkButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0;
+  font-size: 1.2rem;
+  color: var(--bs-primary);
+}
+
+.bookmarkButton:hover {
+  color: var(--bs-primary-darker);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .postHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .postActions {
+    position: static;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+
+  .metadataContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .categorySelector {
+    width: 100%;
+  }
+
+  .postTitleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .editButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .editActionButton {
+    width: 100%;
+  }
+
+  .categoryBadge {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

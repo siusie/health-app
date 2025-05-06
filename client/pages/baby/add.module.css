@@ -1,0 +1,97 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: #f8f9fa; */
+    padding: 2rem;
+    /* width:100%; */
+    /* Increase max-width to accommodate sidebar and form */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 5%; */
+}
+
+.formContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    width: 100%;
+    flex: 1;
+    /* Allow the form container to take up the remaining space */
+    /* display: flex; */
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    /* Set a max-width for the form */
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 24px;
+}
+
+.title {
+    color: #65558F;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.welcomeText {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #65558F;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #534979;
+}
+
+.formControl {
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.formControl:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formSelect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formLabel {
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}

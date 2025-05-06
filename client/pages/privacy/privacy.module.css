@@ -1,0 +1,129 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.main {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #BEAEE2, transparent);
+    margin: 1rem 0;
+    background-color: #e0e0e0;
+}
+
+.content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #dbc4f094;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.sectionHeader {
+    padding: 1rem;
+    background-color: #faf3f065;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.sectionHeader:hover {
+    background-color: #dbc4f02e;
+}
+
+.heading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.list {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.list li {
+    margin-bottom: 0.5rem;
+}
+
+.link {
+    color: #D20062;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 3rem;
+        color: #666;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        text-align: center;
+        color: white;
+        background-color: #BEAEE2;
+        padding: 2rem 0;
+        width: 100%;
+}
+
+.footer .divider {
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, transparent, #BEAEE2, transparent);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,481 @@
+.container {
+  margin-left: 50px;
+  max-width: 1200px;
+  padding: 12px;
+}
+
+/* Toast messages at top-center */
+.toastContainer {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: auto;
+}
+
+.toastMessage {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #444;
+  font-size: 14px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.toastIconCircle {
+  width: 24px;
+  height: 24px;
+  background-color: #b3e6b3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.toastIconCircle.error {
+  background-color: #f8d7da;
+}
+
+.toastClose {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Header row styles */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.headerActions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Next Reminder Banner */
+.nextReminderBanner {
+  display: flex;
+  align-items: center;
+  background-color: #f5eefc;
+  border: 1px solid #d8c8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.reminderCircle {
+  width: 40px;
+  height: 40px;
+  background-color: #674ea7;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.reminderContent {
+  flex: 1;
+}
+
+.reminderTitle {
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #333;
+  font-size: 16px;
+}
+
+.reminderSubtext {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Daily data card styles */
+.dayCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.dayInfo {
+  display: flex;
+  align-items: center;
+}
+
+/* Circle only if it's "today" */
+.dateCircle {
+  width: 34px;
+  height: 34px;
+  background-color: #674ea7; /* Purple */
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+/* No circle if it's not today */
+.dateNoCircle {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 12px;
+  color: #333;
+  /* No background or border so it looks like normal text */
+}
+
+.dateText {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dayHeaderRight {
+  text-align: right;
+}
+
+.todayMeals {
+  font-weight: 500;
+  color: #888;
+}
+
+/* Table styles for reminders */
+.mealsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.mealsTable thead th {
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.mealsTable tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+.actionCell {
+  text-align: right;
+  width: 100px;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #674ea7;
+  font-size: 16px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.editBtn:hover {
+  color: #343a40;
+}
+
+/* Custom checkbox for reminder selection */
+.reminderCheckbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.reminderCheckbox.checked {
+  background-color: #674ea7;
+  border-color: #674ea7;
+}
+
+.reminderCheckbox.checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Custom switch styling */
+.reminderSwitch {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.reminderSwitch input:checked {
+  background-color: #674ea7;
+  border-color: #674ea7;
+}
+
+/* Time input row styling */
+.timeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeSegment {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+
+.timeBox {
+  width: 40px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.timeBox::-webkit-inner-spin-button,
+.timeBox::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.colon {
+  font-weight: bold;
+  margin: 0 4px;
+  color: #444;
+}
+
+.amPmSegment {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.amPmBtn {
+  background-color: #fff;
+  border: none;
+  color: #6c757d;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.amPmBtn:hover {
+  background-color: #f2f2f2;
+}
+
+.amPmBtnActive {
+  background-color: #674ea7;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Button styling */
+.btnCancel {
+  background-color: #f2e6ff;
+  color: #4a235a;
+  border: 1px solid #c59ef8;
+  margin-right: 8px;
+}
+
+.btnCancel:hover {
+  background-color: #e8d9ff;
+  color: #30103b;
+  border-color: #b28ced;
+}
+
+.btnSave {
+  background-color: #674ea7;
+  color: white;
+  border: 1px solid #674ea7;
+}
+
+.btnSave:hover {
+  background-color: #5b43a0;
+  color: white;
+}
+
+.btnActive {
+  background-color: #5b43a0;
+  color: white;
+  border: 1px solid #5b43a0;
+}
+
+.btnActive:hover {
+  background-color: #4a3683;
+  color: white;
+}
+
+.btnDelete {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #dc3545;
+}
+
+.btnDelete:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+/* Empty state styling */
+.emptyStateContainer {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.emptyStateContent {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.emptyStateIcon {
+  font-size: 48px;
+  color: #674ea7;
+  margin-bottom: 20px;
+  background-color: #f5eefc;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.emptyStateContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.emptyStateContainer p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Error message styling */
+.errorText {
+  color: #dc3545;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.noDataContainer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 16px;
+}
+
+/* Styles for form row below modals */
+.reminderRow {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reminderInfo {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 8px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .headerActions {
+    flex-wrap: wrap;
+  }
+
+  .timeRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amPmSegment {
+    margin-top: 8px;
+  }
+
+  .mealsTable thead {
+    display: none;
+  }
+
+  .mealsTable,
+  .mealsTable tbody,
+  .mealsTable tr,
+  .mealsTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .mealsTable tr {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .mealsTable td {
+    text-align: left;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .actionCell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}

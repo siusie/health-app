@@ -1,0 +1,28 @@
+.babyItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    background-color: #EADDFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.babyName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.actionButton {
+    background-color: #65558F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.actionButton:hover {
+    background-color: #514473;
+    color: white;
+}

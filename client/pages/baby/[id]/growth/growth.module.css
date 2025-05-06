@@ -1,0 +1,171 @@
+.statsCard {
+  width: 366px;
+  height: 138px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  background-color: #65558f;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statsContent {
+  flex: 1;
+}
+
+.statsLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 4px;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.valueText {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.differenceContainer {
+  display: flex;
+  align-items: center;
+  color: #65558f;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.differenceArrow {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.lastCheckInRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  margin-top: 16px;
+}
+
+.lastCheckInDate {
+  color: #0a0a0a;
+}
+
+.growthContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.cardsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chartHeaderText {
+  margin: 0;
+}
+
+.chartSubtext {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.addNewButton {
+  background-color: #e8def8 !important;
+  color: #4a4459 !important;
+  border: none !important;
+}
+
+.customTable {
+  border: 2px solid #dcd6f5;
+  border-radius: 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.tableHeadCell {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tableHeadRow th:first-child {
+  border-top-left-radius: 16px;
+}
+.tableHeadRow th:last-child {
+  border-top-right-radius: 16px;
+}
+
+.customTable tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+.customTable tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+.customTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.editButton {
+  background-color: #6a5dcb !important;
+  border: none !important;
+  margin-right: 8px;
+  color: white !important;
+}
+
+.deleteButton {
+  background-color: #cb6a6a !important;
+  border: none !important;
+  color: white !important;
+}
+
+.button {
+  background-color: #e8d9ff;
+  color: #4a235a;
+  border: 1px solid #b28ced;
+}
+
+.button:hover {
+  background-color: #dfc9ff;
+  color: #4a235a;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+
+}

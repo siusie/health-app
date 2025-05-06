@@ -1,0 +1,498 @@
+.container {
+  max-width: 1200px;
+  margin-left: 50px;
+  padding: 12px;
+}
+
+/* Toast messages at top-center */
+.toastContainer {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: auto;
+}
+.toastMessage {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #444;
+  font-size: 14px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+.toastIconCircle {
+  width: 24px;
+  height: 24px;
+  background-color: #b3e6b3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.toastIconCircle.error {
+  background-color: #f8d7da;
+}
+.toastIconCircle.warning {
+  background-color: #fff3cd;
+}
+.toastClose {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Container for the main content */
+.container .headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.title {
+  margin: 0;
+}
+.headerActions {
+  display: flex;
+  gap: 8px;
+}
+
+/* “No feeds yet” / “Feed is due in 2 hours” box */
+.feedDueBox {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.feedDueIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #f5eefc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+.feedDueMain {
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #000;
+}
+.feedDueSub {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Cards for daily data */
+.dayCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+.dayInfo {
+  display: flex;
+  align-items: center;
+}
+.dateCircle {
+  width: 34px;
+  height: 34px;
+  background-color: #674ea7;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 12px;
+  font-size: 16px;
+}
+.dateNumber {
+  font-weight: 600;
+  font-size: 16px;
+  color: #674ea7;
+  margin-right: 12px;
+}
+.dateText {
+  font-weight: 600;
+  font-size: 16px;
+}
+.dayHeaderRight {
+  text-align: right;
+}
+.todayMeals {
+  font-weight: 500;
+  color: #888;
+}
+
+/* Table for meals */
+.mealsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.mealsTable thead th {
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.mealsTable tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+.actionCell {
+  text-align: right;
+  width: 60px;
+}
+.editBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #674ea7;
+  font-size: 16px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+.editBtn:hover {
+  color: #343a40;
+}
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #674ea7;
+  font-size: 16px;
+  padding: 4px;
+  transition: color 0.2s;
+  margin-left: 4px;
+}
+.deleteBtn:hover {
+  color: #b02128;
+}
+
+/* Export modal text */
+.exportModalSubtext {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+.exportModalLabel {
+  font-weight: 600;
+  color: #333;
+}
+.exportDateRow {
+  display: flex;
+  gap: 8px;
+}
+.dateInput {
+  flex: 1;
+  min-width: 0;
+}
+.exportError {
+  margin-top: 8px;
+  color: red;
+  font-weight: 500;
+}
+
+/* Time row for hour/minute/am/pm */
+.timeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.timeSegment {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+.timeBox {
+  width: 40px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  -moz-appearance: textfield;
+}
+.timeBox::-webkit-inner-spin-button,
+.timeBox::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.colon {
+  font-weight: bold;
+  margin: 0 4px;
+  color: #444;
+}
+.amPmSegment {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.amPmBtn {
+  background-color: #fff;
+  border: none;
+  color: #6c757d;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.amPmBtn:hover {
+  background-color: #f2f2f2;
+}
+.amPmBtnActive {
+  background-color: #b28ced;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Next feed reminder info text */
+.reminderInfo {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 8px 0;
+}
+.form-switch .form-check-input:checked {
+  background-color: #7f4cc0;
+  border-color: #7f4cc0;
+}
+.form-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(127, 76, 192, 0.25);
+}
+.reminderRow {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* When no data is found */
+.noDataContainer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 16px;
+}
+
+/* Light purple styling for Cancel and Save buttons */
+.btnCancel {
+  background-color: #f2e6ff;
+  color: #4a235a;
+  border: 1px solid #c59ef8;
+  margin-right: 8px;
+}
+.btnCancel:hover {
+  background-color: #e8d9ff;
+  color: #30103b;
+  border-color: #b28ced;
+}
+.btnSave {
+  background-color: #e8d9ff;
+  color: #4a235a;
+  border: 1px solid #b28ced;
+}
+.btnSave:hover {
+  background-color: #dfc9ff;
+  color: #30103b;
+}
+
+/* Enhanced reminder container styling */
+.reminderContainer {
+  border: 1px solid #d8c8f0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+/* Reminder section title */
+.reminderSectionTitle {
+  color: #674ea7;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.reminderIcon {
+  margin-right: 8px;
+  color: #674ea7;
+}
+
+/* Formatting for reminder preview */
+.reminderPreview {
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 12px;
+  background-color: white;
+}
+
+.reminderPreviewTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.reminderPreviewItem {
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.reminderPreviewLabel {
+  font-weight: 600;
+  min-width: 60px;
+  color: #666;
+}
+
+.reminderPreviewValue {
+  flex: 1;
+}
+
+/* Button styling for time presets */
+.timePresetButton {
+  background-color: white;
+  border: 1px solid #d8c8f0;
+  color: #674ea7;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timePresetButton:hover {
+  background-color: #f5eefc;
+}
+
+.timePresetButtonActive {
+  background-color: #674ea7;
+  color: white;
+  border: 1px solid #674ea7;
+}
+
+/* Format reminder notes in reminders table with proper spacing */
+.reminderNotes {
+  white-space: pre-line;
+}
+
+/* Tables for reminders */
+.remindersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.remindersTable thead th {
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.remindersTable tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .headerActions {
+    flex-wrap: wrap;
+  }
+
+  .timeRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amPmSegment {
+    margin-top: 8px;
+  }
+
+  .mealsTable thead {
+    display: none;
+  }
+
+  .mealsTable,
+  .mealsTable tbody,
+  .mealsTable tr,
+  .mealsTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .mealsTable tr {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .mealsTable td {
+    text-align: left;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .actionCell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .reminderPreviewItem {
+    flex-direction: column;
+  }
+
+  .reminderPreviewLabel {
+    margin-bottom: 4px;
+  }
+}

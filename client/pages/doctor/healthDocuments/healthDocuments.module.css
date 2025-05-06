@@ -1,0 +1,33 @@
+.container {
+    width: 1200px;
+    margin-left: 50px;
+}
+
+.parentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #EADDFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.viewBabiesButton {
+    background-color: #65558F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.viewBabiesButton:hover {
+    background-color: #5a4b7f; /* Darker green */
+}

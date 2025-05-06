@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.header {
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.overviewCard {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.card {
+    margin: 20px;
+    border: 3px solid #eaeaea;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.value1 {
+    color: blue;
+}
+
+.value2 {
+    color: rgb(100, 248, 100);
+}
+
+.value3 {
+    color: #FF0000;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 50px;
+    flex: 1;
+}
+
+.patientList {
+    flex: 1;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patientListHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.searchBar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.searchBar input {
+    width: 300px;
+    padding: 10px 10px 10px 40px; /* Adjust padding for the icon */
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    background-color: #ffffff; /* White background */
+    color: #374151; /* Text color */
+    transition: border-color 0.3s ease;
+}
+
+.searchBar input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Subtle focus effect */
+}
+
+.searchBar .searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af; /* Gray icon color */
+    font-size: 18px;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto; /* For responsiveness */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb; /* Light gray border */
+}
+
+.table th {
+    background-color: #f9fafb; /* Light gray background for header */
+    font-weight: 600;
+    color: #374151; /* Dark gray text */
+}
+
+.table tbody tr:hover {
+    background-color: #f3f4f6; /* Light gray background on hover */
+}
+
+.statusCritical {
+    background-color: #fee2e2; /* Light red background */
+    color: #dc2626; /* Dark red text */
+    padding: 4px 8px;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 14px;
+}
+
+.statusStable {
+    background-color: #dcfce7; /* Light green background */
+    color: #16a34a; /* Dark green text */
+    padding: 4px 8px;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 14px;
+}
+
+.statusReview {
+    background-color: #fef3c7; /* Light yellow background */
+    color: #d97706; /* Dark yellow text */
+    padding: 4px 8px;
+    border-radius: 9999px; /* Pill shape */
+    font-size: 14px;
+}
+
+.medicalHistoryData {
+    width: 500px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,99 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.main {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #DBC4F0, transparent);
+    margin: 1rem 0;
+    background-color: #e0e0e0;
+}
+
+.content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #dbc4f094;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.categoryHeader {
+    padding: 1rem;
+    background-color: #faf3f065;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.categoryHeader h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.sectionContent {
+    padding: 1rem;
+}
+
+.sectionContent p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.valuesList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.valuesList li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.valuesList strong {
+    color: #444;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .sectionContent {
+        padding: 0.75rem;
+    }
+}

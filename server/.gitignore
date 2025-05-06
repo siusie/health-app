@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Coverage directory
+coverage/
+
+# Build directory
+dist/
+build/
+
+# Jest cache and coverage
+jest/
+.jest/
+
+# Ignore database files
+*.sql
+!tummyTime.sql
+
+# Ignore other files (system, etc)
+.DS_Store
+__*

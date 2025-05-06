@@ -1,0 +1,114 @@
+.searchByCategoryBox {
+    border-top: black 5px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchByCategory {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+#categoryDropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #EADDFF;
+}
+
+.options {
+    background-color: #EADDFF;
+
+}
+.options:hover {
+    background-color: black;
+
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 800px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #65558F ;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #4b3b6d;
+}
+
+.searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: -20px;
+    margin-top: 20px;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.resultItem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+}
+
+.itemLink {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #721c24;
+    text-decoration: underline;
+}
+
+.errorMessage {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.recallsList {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.recallsList.expanded {
+max-height: 2000px; /* Adjust based on your content needs */
+}
+
+.collapseBtn {
+    background-color: #65558F;
+    color: white;
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.collapseBtn:hover {
+    background-color: #4B3B6D;
+}

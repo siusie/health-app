@@ -1,0 +1,230 @@
+/* client/pages/coupons/coupons.module.css */
+/* Main container */
+
+.container {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding: 0 15px;
+  margin-left: 50px;
+}
+
+.couponContainer {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.contentContainer {
+  padding: 1.5rem;
+}
+
+/* Loading and error states */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  max-width: 800px;
+}
+
+/* Filter section */
+.filtersSection {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.searchForm {
+  width: 100%;
+}
+
+.searchRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.searchInput,
+.filterSelect {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus,
+.filterSelect:focus {
+  border-color: #6658d3;
+  box-shadow: 0 0 0 0.2rem rgba(102, 88, 211, 0.25);
+}
+
+.resetButton {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+}
+
+.resetButtonCenter {
+  margin-top: 1rem;
+  padding: 0.625rem 2rem;
+  border-radius: 8px;
+}
+
+/* Last update info */
+.lastUpdate {
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* No results message */
+.noResultsFound {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+/* Section styling */
+.featuredSection,
+.babySection,
+.allOffersSection,
+.searchResultsSection {
+  margin-bottom: 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.viewMoreButton {
+  color: #6658d3;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: rgba(102, 88, 211, 0.1);
+  text-decoration: none;
+}
+
+/* Carousel styling */
+.carouselContainer {
+  padding-bottom: 2.5rem; /* Space for dots */
+}
+
+.carouselDots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carouselItem {
+  padding: 0.5rem;
+}
+
+.carouselCard {
+  height: 100%;
+  padding: 0.5rem;
+}
+
+/* Grid layout */
+.couponGrid {
+  margin-top: 1.25rem;
+}
+
+.viewAllContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.viewAllButton {
+  background-color: #6658d3;
+  border-color: #6658d3;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(102, 88, 211, 0.2);
+  transition: all 0.3s ease;
+}
+
+.viewAllButton:hover {
+  background-color: #5548b8;
+  border-color: #5548b8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102, 88, 211, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .filtersSection {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .viewMoreButton {
+    margin-left: 0;
+  }
+}

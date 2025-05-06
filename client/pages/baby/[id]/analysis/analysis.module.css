@@ -1,0 +1,82 @@
+.analysisContainer {
+  max-width: 1200px;
+  margin-left: 50px;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+/**************
+   * Chart sizing
+   **************/
+.chartContainer {
+  width: 80%;
+  height: 300px;
+}
+
+/**************
+   * Toggle button group
+   **************/
+.buttonGroup {
+  display: flex;
+}
+
+.toggleButton {
+  border: 1px solid #65558f;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}
+
+/* The left button: rounded left corners, no right border */
+.toggleButton:first-of-type {
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+/* The right button: rounded right corners */
+.toggleButton:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
+
+/* Active/selected state */
+.toggleButtonActive {
+  background-color: #65558f;
+  color: #fff;
+}
+
+/***********************************
+   * Remove bottom border from the Nav
+   ***********************************/
+.customNavTabs {
+  /* Hide the default underline on .nav-tabs */
+  border-bottom: none !important;
+}
+
+/* Default (non-active) tab text = dark gray */
+.customNavTabs .nav-link {
+  color: #333 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* Hover color slightly darker, optional */
+.customNavTabs .nav-link:hover {
+  color: #222 !important;
+}
+
+/* Active tab text color also #333, no border */
+.customNavTabs .nav-link.active {
+  color: #333 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/****************************************
+   * Remove the border that separates panes
+   ****************************************/
+.noPaneBorder {
+  border: none !important;
+  box-shadow: none !important;
+}

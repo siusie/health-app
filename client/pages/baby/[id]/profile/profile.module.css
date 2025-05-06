@@ -1,0 +1,145 @@
+/* Complete CSS file with both existing and new styles */
+
+/* Original styles */
+.mainContainer {
+  padding: 2rem 4rem;
+}
+
+.profileSection {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  font-weight: 500;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  margin-left: 10px; /* Add spacing between buttons */
+}
+
+.deleteButton:hover {
+  opacity: 0.8;
+  background-color: transparent !important;
+  color: #dc3545 !important;
+}
+
+.deleteButton:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.modalCheckbox {
+  margin-top: 1rem;
+}
+
+/* New styles for profile picture */
+.profilePictureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.profilePicture {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.photoButtonsContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.changePhotoButton {
+  background-color: #65558F;
+  border: none;
+}
+
+.changePhotoButton:hover {
+  background-color: #4D3D7E;
+}
+
+.removeButton {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.removeButton:hover {
+  background-color: #dc3545;
+  color: white !important;
+}
+
+/* Styles for feature cards */
+.featureCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for baby cards in profile listing */
+.hoverCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.hoverCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styling */
+.customButton {
+  background-color: #65558F;
+  border: none;
+}
+
+.customButton:hover {
+  background-color: #4D3D7E;
+}

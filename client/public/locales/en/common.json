@@ -1,0 +1,14 @@
+{
+  "hello": "Hello123",
+  "about": "About123",
+  "Dashboard content": "Dashboard content",
+  "Settings": "Settings",
+  "User": "User",
+  "Milestones": "Milestones",
+  "Health Records": "Health Records",
+  "Growth Tracker": "Growth Tracker",
+  "Preferred Languages": "Preferred Languages",
+  "English": "English",
+  "French": "French",
+  "Welcome, {{name}}": "Welcome, {{name}}"
+}

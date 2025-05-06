@@ -1,0 +1,40 @@
+name: Daily Coupon Data Refresh
+
+on:
+  schedule:
+    # Run at 12 AM EST (5 AM UTC)
+    - cron: '0 5 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  refresh-coupon-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'client/package-lock.json'
+      
+      - name: Install dependencies
+        working-directory: ./client
+        run: npm ci
+      
+      - name: Run refresh script
+        working-directory: ./client
+        run: node scripts/refresh-linkmydeals-cache.js
+        env:
+          NEXT_PUBLIC_LINKMYDEALS_API_KEY: ${{ secrets.NEXT_PUBLIC_LINKMYDEALS_API_KEY }}
+      
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add client/public/data/coupons-discounts.json
+          # Only commit and push if there are changes
+          git diff --staged --quiet || (git commit -m "Auto-update coupon data $(date +'%Y-%m-%d')" && git push)

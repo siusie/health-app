@@ -1,0 +1,98 @@
+.container {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding:12px;
+    margin-top:20px;
+}
+
+.profileCard {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.profileHeader h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+}
+
+.profileHeader .specialization {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555555;
+}
+
+.profileHeader .experience {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777777;
+}
+
+.profileContact {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profileContact .email,
+.profileContact .phone {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.profileActions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profileActions .viewButton {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.profileActions .viewButton:hover {
+    background-color: #0056b3;
+}
+
+.assignedBabies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+.babyName {
+    height: 8px;
+}
+
+.button {
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #E8DEF8;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #D0BCFF;
+    color: #ffffff;
+}

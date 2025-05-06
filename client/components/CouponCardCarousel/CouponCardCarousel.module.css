@@ -1,0 +1,116 @@
+.couponContainer :global(.react-multi-carousel-dot-list) {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* Update carousel card to support absolute positioning */
+.carouselCard {
+  position: relative;
+  padding-bottom: 60px; /* Space for the print button */
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  margin: 4px;
+  padding: 4px;
+  flex-grow: 1;
+  min-width: calc(30% - 8px);
+}
+
+.carouselCardButton {
+  display: flex;
+  min-width: calc(100% - 6px);
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 22px;
+  background-color: #f7f7f7;
+  text-align: center;
+  text-align-last: center;
+}
+
+.carouselImageContainer {
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.carouselImage {
+  max-height: calc(88% - 11px);
+  max-width: calc(88% - 11px);
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Update carousel card content to support absolute positioning */
+.carouselCardContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 1%;
+  padding: 0 1%;
+}
+
+.cardText {
+  font-size: 0.8em;
+}
+
+.discountCode {
+  font-weight: bold;
+}
+
+/* Common print button styles */
+.printButtonBase {
+  display: block;
+  padding: 8px 16px;
+  background-color: #65558F;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background-color 0.2s;
+}
+
+.printButtonBase:hover {
+  background-color: #4D3D7E;
+  color: white;
+  text-decoration: none;
+}
+
+/* Print button for carousel cards */
+.printButtonCarousel {
+  composes: printButtonBase;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+}
+
+/* Print button for grid cards */
+.printButton {
+  composes: printButtonBase;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+}
+
+.printButtonCarousel:hover,
+.printButton:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+}

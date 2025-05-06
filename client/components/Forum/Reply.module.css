@@ -1,0 +1,117 @@
+.replyCard {
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+
+.replyForm {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.replyButton {
+    margin-top: 1rem;
+}
+
+.replyMetadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: #666666;
+}
+
+.replyActions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.editButton {
+    color: #6c757d;
+    border: none;
+    background: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.editButton:hover {
+    color: white;
+    background: #6c757d;
+}
+
+.deleteButton {
+    color: #dc3545;
+    border: none;
+    background: none;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0;
+}
+
+.deleteButton:hover {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.editContentInput {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.editButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+}
+
+.editActionButton {
+    min-width: 80px;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    margin-left: 0 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.successToast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.toastContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    min-width: 200px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.editedText {
+    margin-left: 1rem;
+    color: #6c757d;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .replyMetadata {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .replyActions {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}

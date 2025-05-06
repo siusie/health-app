@@ -1,0 +1,1030 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.filterSection {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.searchBar {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.searchInput {
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 0 16px;
+  font-size: 15px;
+  background-color: #f8f8f8;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #7f56d9;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(127, 86, 217, 0.1);
+}
+
+.providerFilters {
+  padding: 16px 16px 8px;
+  background-color: #f9f9fb;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.filterHeading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.providerTypes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.providerTypeBtn {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Default colors for each button type */
+.allBtn {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  border-color: #d1d5db;
+}
+
+.afterSchoolBtn {
+  background-color: #e0e7ff; /* Soft indigo pastel */
+  color: #4338ca;
+  border-color: #c7d2fe;
+}
+
+.babysittersBtn {
+  background-color: #fce7f3;
+  color: #be185d;
+  border-color: #fbcfe8;
+}
+
+.inHomeDaycareBtn, .homeDaycareBtn {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+}
+
+/* Updated Nannies color to be more distinct */
+.nanniesBtn {
+  background-color: #93c5fd; /* Brighter, more saturated blue */
+  color: #1e40af;
+  border-color: #60a5fa;
+}
+
+.specialNeedsBtn {
+  background-color: #ede9fe;
+  color: #7c3aed;
+  border-color: #ddd6fe;
+}
+
+.weekendBtn {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+/* Active state styling - make slightly darker/more saturated */
+.providerTypeBtn.active {
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.allBtn.active {
+  background-color: #d1d5db;
+  color: #1f2937;
+  border-color: #9ca3af;
+}
+
+.afterSchoolBtn.active {
+  background-color: #c7d2fe;
+  color: #3730a3;
+  border-color: #a5b4fc;
+}
+
+.babysittersBtn.active {
+  background-color: #fbcfe8;
+  color: #9d174d;
+  border-color: #f9a8d4;
+}
+
+.inHomeDaycareBtn.active, .homeDaycareBtn.active {
+  background-color: #fde68a;
+  color: #78350f;
+  border-color: #fcd34d;
+}
+
+/* Updated Nannies active state */
+.nanniesBtn.active {
+  background-color: #60a5fa; /* Darker when active */
+  color: #1e3a8a;
+  border-color: #3b82f6;
+}
+
+.specialNeedsBtn.active {
+  background-color: #ddd6fe;
+  color: #6d28d9;
+  border-color: #c4b5fd;
+}
+
+.weekendBtn.active {
+  background-color: #fecaca;
+  color: #991b1b;
+  border-color: #fca5a5;
+}
+
+/* Updated control bar to fix spacing issues */
+.controlBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+  gap: 16px; /* Added gap for better spacing on wrap */
+}
+
+.sortSection {
+  flex-grow: 1;
+  margin-right: 20px; /* Added margin to create space between sort and filters */
+}
+
+.sortControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-right: 10px; /* Added margin for better spacing */
+}
+
+.sortBtn {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* Prevent text wrapping within buttons */
+}
+
+.sortBtn:hover {
+  background-color: #f9fafb;
+}
+
+.sortBtn.active {
+  background-color: #7f56d9;
+  color: white;
+  border-color: #7f56d9;
+}
+
+/* Improved Filter Buttons */
+.filterButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Premium Filter Button */
+.premiumToggle, .favoriteToggle, .verifiedToggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 6px 16px;
+  font-size: 14px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.premiumToggle:hover, .favoriteToggle:hover, .verifiedToggle:hover {
+  background-color: #f9fafb;
+}
+
+.premiumToggle.active {
+  background-color: #fff8e1;
+  color: #f59e0b;
+  border-color: #fef3c7;
+}
+
+.favoriteToggle.active {
+  background-color: #ffe4e6;
+  color: #e11d48;
+  border-color: #fecdd3;
+}
+
+.verifiedToggle.active {
+  background-color: #e3f2fd;
+  color: #0277bd;
+  border-color: #bbdefb;
+}
+
+.premiumToggle .premiumStar {
+  color: #f59e0b;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.favoriteToggle .heart {
+  color: #e11d48;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.verifiedToggle .checkmark {
+  color: #0277bd;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Results count styling - positioned above provider cards */
+.resultsCount {
+  margin: 16px 0;
+  font-size: 14px;
+  color: #777d86; /* Blue color matching image */
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  padding-left: 8px;
+}
+
+.providersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Empty state when no providers match filters */
+.emptyState {
+  grid-column: 1 / -1;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #666;
+  margin: 20px 0;
+}
+
+/* Loading state */
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error state */
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 24px 0;
+  border: 1px solid #ffcdd2;
+}
+
+.retryButton {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Provider Card Styling */
+.providerCard {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+}
+
+.providerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.providerCard * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Updated card colors to lighter pastel shades */
+.babysitter {
+  background-color: #fde8f4; /* Lighter pink pastel */
+  border: 1px solid #fbcfe8;
+}
+
+.nanny {
+  background-color: #dbeafe; /* Lighter blue pastel */
+  border: 1px solid #60a5fa;
+}
+
+.afterSchoolCare {
+  background-color: #eff2ff; /* Lighter indigo pastel */
+  border: 1px solid #c7d2fe;
+}
+
+.childCare {
+  background-color: #ecfdf5; /* Lighter green pastel */
+  border: 1px solid #bbf7d0;
+}
+
+.inHomeDaycare {
+  background-color: #fef9c3; /* Lighter yellow pastel */
+  border: 1px solid #fde68a;
+}
+
+.specialNeeds {
+  background-color: #f3f0ff; /* Lighter purple pastel */
+  border: 1px solid #ddd6fe;
+}
+
+.weekendChildCare {
+  background-color: #fee2e2; /* Soft red pastel */
+  border: 1px solid #fecaca;
+}
+
+/* Improved premium card styling that preserves the provider type color */
+.premium {
+  position: relative;
+  border-width: 2px !important;
+  border-color: #fb923c !important;
+  box-shadow: 0 4px 12px rgba(251, 146, 60, 0.15) !important;
+}
+
+/* Add premium glow effect */
+.premium::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: transparent;
+  border: 2px solid #fb923c;
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+/* Premium ribbon at top right */
+.premiumRibbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fb923c;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  z-index: 5; /* Higher z-index to ensure visibility */
+  transform-origin: top right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.premiumStar {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+/* Verified ribbon at top left */
+.verifiedRibbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0277bd;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  z-index: 3;
+  transform-origin: top left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.verifiedCheck {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+/* Card Header */
+.providerHeader {
+  display: flex;
+  margin-bottom: 16px;
+  padding-top: 20px; /* Increased to avoid overlapping with ribbons */
+}
+
+.providerImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.placeholderImage {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.providerInfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Provider Info with name and age */
+.providerName {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  padding-right: 30px; /* Added to prevent overlap with favorite button */
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.providerAge {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Provider location with postal code */
+.location {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.locationSeparator {
+  margin: 0 5px;
+  color: #888;
+}
+
+.postalCode {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Provider statistics (reviews, hired count, response rate) */
+.providerStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.statItem {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.statValue {
+  font-weight: 600;
+  margin-right: 4px;
+  color: #444;
+}
+
+/* Badge container no longer needed in header but kept for compatibility */
+.badgeContainer {
+  display: flex;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Provider type badge styling - improved for better visibility */
+.providerTypeBadge {
+  margin: 10px 0;
+  display: flex;
+}
+
+.typeBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: white; /* White background for all tags */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.typeBadge.afterschoolcare {
+  color: #4338ca;
+  border: 1.5px solid #c7d2fe;
+}
+
+.typeBadge.babysitters {
+  color: #be185d;
+  border: 1.5px solid #fbcfe8;
+}
+
+.typeBadge.childcare {
+  color: #15803d;
+  border: 1.5px solid #bbf7d0;
+}
+
+.typeBadge.inhomedaycare {
+  color: #92400e;
+  border: 1.5px solid #fde68a;
+}
+
+.typeBadge.nannies {
+  color: #1e40af;
+  border: 1.5px solid #60a5fa;
+}
+
+.typeBadge.specialneeds {
+  color: #7c3aed;
+  border: 1.5px solid #ddd6fe;
+}
+
+.typeBadge.weekendchildcare {
+  color: #b91c1c;
+  border: 1.5px solid #fca5a5;
+}
+
+/* Card Body */
+.providerContent {
+  flex: 1;
+  margin-bottom: 16px;
+  min-height: 80px; /* Added to ensure consistent card height */
+}
+
+.bio {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Price Tag */
+.hourlyRate {
+  background-color: #f0faf0;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: bold;
+  color: #28a745;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  flex-shrink: 0;
+}
+
+/* Experience badge */
+.experience {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Card Footer */
+.providerActions {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewProfileButton {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  background-color: #8b5cf6; /* Purple color that matches app theme */
+  color: white;
+  margin-left: 10px;
+}
+
+.viewProfileButton:hover {
+  background-color: #7c3aed; /* Darker purple on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.25);
+}
+
+/* Favorite Button Styles */
+.favoriteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust position when premium to avoid overlap */
+.premiumFavoriteButton {
+  top: 32px; /* Move down when premium */
+  right: 10px;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.favoriteButton:active {
+  transform: scale(0.9);
+}
+
+.favoriteIcon {
+  width: 22px;
+  height: 22px;
+  fill: transparent;
+  stroke: #ff6b6b;
+  stroke-width: 2;
+  transition: all 0.3s ease;
+}
+
+.favoriteIcon.active {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+  animation: heartBeat 0.3s ease-in-out;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Updated Pagination styles to match the design in the reference image */
+.paginationContainer {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #f8f9fa;
+  padding: 16px 0;
+  border-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* General pagination buttons */
+.paginationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginationButton:hover:not(.disabled) {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.paginationButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Page numbers container */
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Individual page number button */
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pageNumber:hover:not(.currentPage) {
+  background-color: #f8f9fa;
+}
+
+.pageNumber.currentPage {
+  background-color: #7952b3; /* Purple color matching image */
+  color: white;
+  border-color: #7952b3;
+}
+
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  color: #6c757d;
+}
+
+/* Manual page input section */
+.manualPageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.manualPageLabel {
+  font-size: 14px;
+  color: #495057;
+}
+
+.manualPageForm {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.manualPageInput {
+  width: 65px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  padding: 0 8px;
+  font-size: 14px;
+  text-align: left;
+  background: white;
+}
+
+.manualPageInput:focus {
+  outline: none;
+  border-color: #7952b3;
+  box-shadow: 0 0 0 0.2rem rgba(121, 82, 179, 0.25);
+}
+
+.manualPageSubmit {
+  height: 32px;
+  padding: 0 10px;
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.manualPageSubmit:hover {
+  background-color: #dee2e6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 24px 16px;
+  }
+  
+  .pageTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+/* Updated control bar to improve alignment of sort and filter buttons */
+.controlBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+  gap: 16px; /* Added gap for better spacing on wrap */
+}
+
+.sortSection {
+  flex-grow: 1;
+  margin-right: 20px; /* Added margin to create space between sort and filters */
+  display: flex;
+  flex-direction: column;
+}
+
+.sortControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-right: 10px; /* Added margin for better spacing */
+}
+
+.filterButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center; /* Align vertically with sort buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .controlBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .sortSection {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .sortControls {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  
+  .filterButtons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .premiumToggle, .favoriteToggle, .verifiedToggle {
+    flex: 1;
+    justify-content: center;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+  .providersGrid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .pagination {
+    gap: 4px;
+  }
+  
+  .paginationButton {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  
+  .pageNumber {
+    min-width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  
+  .manualPageSection {
+    flex-wrap: wrap;
+  }
+  
+  .manualPageInput {
+    width: 55px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 64px; /* Match navbar height exactly */
+    width: 100%;
+    transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+.main {
+    margin-left: 250px; /* Default sidebar width */
+    padding: 1rem 2rem;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transitions */
+}
+
+.mainCollapsed {
+    margin-left: 60px; /* Collapsed sidebar width */
+    width: calc(100% - 60px);
+}

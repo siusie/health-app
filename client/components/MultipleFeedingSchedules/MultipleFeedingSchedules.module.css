@@ -1,0 +1,51 @@
+.customAccordion {
+  border-radius: 5px;
+  border-color: #DBC4F0 !important;
+}
+
+.customAccordion :global(.accordion-button) {
+  background-color: #dbc4f077;
+  color: #515151;
+  font-weight: 500;
+  padding: 1rem;
+  border: none;
+}
+
+.customAccordion :global(.accordion-button:not(.collapsed)) {
+  background-color: white;
+  color: #515151;
+  box-shadow: none;
+}
+
+.customAccordion :global(.accordion-button:focus) {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.customAccordion :global(.accordion-body) {
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+
+.customAccordion :global(.accordion-item) {
+  border: 1px solid #dbc4f07b;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.customAccordion :global(.accordion-button::after) {
+  color: #515151;
+}
+
+.customAccordion :global(.accordion-button:hover) {
+  background-color: #c4a7e3;
+}
+
+.statusMessage {
+  text-align: center;
+  padding: 1.5rem;
+  color: #666;
+  font-size: 1.1rem;
+}

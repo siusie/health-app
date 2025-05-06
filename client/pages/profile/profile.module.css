@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  margin-left: 50px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 24px; */
+}
+
+.customButton {
+  background-color: #65558F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: #4D3D7E;
+}
+
+.hoverCard {
+  transition: all 0.3s ease;
+}
+
+.hoverCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    margin-left: 16px;
+  }
+}

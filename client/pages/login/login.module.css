@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formContainer {
+    width: 396px;
+    height: auto;
+    margin: auto;
+    align-self: center;
+}
+  
+.row {
+    margin: auto;
+    align-self: center;
+}
+
+.form {
+    border: 1px solid #ced4da;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.formControl {
+    border: 1px solid #ced4da;
+    font-size: 1.25rem;
+}
+
+.formControl:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Style for input group to ensure consistent borders */
+.inputGroup {
+    display: flex;
+}
+
+.inputGroup .formControl {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputError, .inputError + .passwordToggle {
+    border-color: #dc3545;
+}
+
+.inputError:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.loginButton {
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #65558F;
+    margin-top: 0.5rem;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.loginButton:hover, .loginButton:focus, .loginButton:active {
+    background-color: #534679 !important;
+    border: none !important;
+}
+
+.loginButton:disabled {
+    background-color: #8980b3 !important;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.errorMessage {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inputWithFeedback {
+    position: relative;
+}
+
+.inlineErrorMessage {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.errorIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #dc3545;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+.passwordToggle {
+    z-index: 1;
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #65558F;
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.375rem 0.75rem;
+    min-width: 60px;
+    transition: none;
+}
+
+.passwordToggle:hover {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #534679;
+}
+
+.passwordToggle:focus, .passwordToggle:active {
+    background-color: #f8f9fa !important;
+    border-color: #ced4da !important;
+    color: #65558F !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

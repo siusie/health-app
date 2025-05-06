@@ -1,0 +1,53 @@
+.modalNote {
+    font-size: 0.9rem;
+    color: #6c757d; /* Bootstrap's muted text color */
+    margin-top: 5px;
+}
+
+.fileList {
+  padding: 0;
+}
+
+.fileItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8DEF8;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .fileName {
+    padding: 10px;
+    max-width: 70%;
+    overflow: hidden;
+  }
+  
+  .downloadLink {
+    background-color: #4a235a;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+    padding-right: 10px;
+  }
+
+  .downloadLink:hover {
+    color: #4a235a;
+    background-color: #dfc9ff;
+  }
+
+  .sendButton {
+    background-color: #e8d9ff;
+    color: #4a235a;
+    border: 1px solid #b28ced;
+    margin-left: 10px;
+  }
+
+  .sendButton:hover {
+    color: #4a235a;
+    background-color: #dfc9ff;
+  }

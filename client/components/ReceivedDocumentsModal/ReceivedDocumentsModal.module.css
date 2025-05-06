@@ -1,0 +1,48 @@
+.documentList {
+    padding: 0px;
+}
+
+.documentItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.fileName {
+    padding: 10px;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.downloadButton {
+    background-color: #65558F;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.downloadButton:hover {
+    background-color: #4E3F6D;
+    color: white;
+}
+
+.sendButton {
+    background-color: #e8d9ff;
+    color: #4a235a;
+    border: 1px solid #b28ced;
+}
+
+.sendButton:hover {
+    background-color: #dfc9ff;
+    color: #4a235a;
+
+}

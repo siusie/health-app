@@ -1,0 +1,75 @@
+.navContainer {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: absolute;
+        background: transparent;
+        color: white;
+        width: 100%;
+        z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:inherit;
+    gap: 0.5rem;
+}
+
+.logo {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    animation: shake 0.5s ease-in-out;
+    text-decoration:none;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.brandName {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.topNav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Separate stylings for the privacy, ToS page */
+.dark .brandName {
+    color: black;
+    font-weight: normal;
+}
+
+.dark :global(.btn-light) {
+    background-color: #BEAEE2;
+    color: white;
+    border-color: #BEAEE2;
+}
+
+.dark :global(.btn-light:hover) {
+    background-color: #A267AC;
+    color: white;
+    border-color: #A267AC;
+}
+
+.dark :global(.btn-outline-light) {
+    color: #0000009d;
+    border-color: #BEAEE2;
+}
+
+.dark :global(.btn-outline-light:hover) {
+    background-color: #BFA2DB;
+    color: white;
+}

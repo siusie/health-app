@@ -1,0 +1,19 @@
+/* client/pages/tips/tips.module.css */
+/* Tips page */
+.container {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    max-width: 1200px;
+    padding: 12px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width:90%
+}
+
+.button {
+    background-color: #65558F;
+}
+  
+.button:hover {
+    background-color: #4D3D7E;
+}

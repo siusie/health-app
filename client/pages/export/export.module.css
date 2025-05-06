@@ -1,0 +1,25 @@
+/* client/pages/[export]/export.module.css */
+
+.container {
+  /* padding: 0 15px; */
+  margin: 0 auto;
+    margin-top: 20px;
+        max-width: 1200px;
+          margin-left: 50px;
+          padding: 12px;
+}
+
+.button {
+  background-color: #65558f;
+  color: white;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: #4d3d7e;
+}
+
+.header {
+  margin: 20px 0;
+}

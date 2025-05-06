@@ -1,0 +1,169 @@
+/* client/components/ProfilePicture/ProfilePictureManager.module.css */
+
+/* Main container */
+.profilePictureManager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Image container with circular mask */
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile image styling */
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Container for buttons */
+  .buttonContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Upload button */
+  .uploadButton {
+    background-color: #65558F;
+    border: none;
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .uploadButton:hover {
+    background-color: #4D3D7E;
+  }
+  
+  /* Remove button */
+  .removeButton {
+    color: #dc3545;
+    border-color: #dc3545;
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .removeButton:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+/* Add these styles to your ProfilePictureManager.module.css file */
+
+/* Modal styling - UPDATED for better visibility with white background */
+.modalWrapper :global(.modal-content) {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff; /* Bright white background */
+  }
+  
+  .modalWrapper :global(.modal-header) {
+    background-color: #ffffff; /* White header */
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 1.5rem; /* Slightly more padding */
+  }
+  
+  .modalWrapper :global(.modal-title) {
+    color: #333333; /* Dark text */
+    font-weight: 500;
+  }
+  
+  .modalWrapper :global(.modal-footer) {
+    background-color: #ffffff; /* White footer */
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem; /* Slightly more padding */
+  }
+  
+  /* Distinctive button styling */
+  .modalWrapper :global(.btn-primary) {
+    background-color: #65558F;
+    border-color: #65558F;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .modalWrapper :global(.btn-secondary) {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+  }
+  
+  .modalWrapper :global(.btn-outline-danger) {
+    color: #dc3545;
+    border-color: #dc3545;
+    background-color: white;
+    font-weight: 500;
+  }
+  
+  /* Make crop container stand out against the modal */
+  .cropContainer {
+    margin-top: 1rem;
+    user-select: none;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    padding: 15px;
+    border-radius: 0.5rem;
+    border: 1px solid #eeeeee;
+  }
+  
+  /* Preview section */
+  .previewSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: white; /* Ensure white background */
+    padding: 10px;
+    border-radius: 0.25rem;
+  }
+  
+  /* Preview circle */
+  .previewCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: white; /* White background */
+  }
+  
+  /* Preview canvas */
+  .previewCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* GIF preview */
+  .previewGif {
+    transform-origin: top left;
+    max-width: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .buttonContainer {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .uploadButton, .removeButton {
+      width: 100%;
+    }
+    
+    .previewCircle {
+      width: 70px;
+      height: 70px;
+    }
+  }
