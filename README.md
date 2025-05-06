@@ -167,15 +167,3 @@ npm run dev
 - Frontend: Hosted on Vercel
 
 - Database: Hosted on Supabase
-
-**8. Test Account Credentials**
-
-As parent:
-· Username: vuanhchien003@gmail.com
-
-· Password: Password1@
-
-As Medical Professional:
-· Username: chienvu0209@gmail.com
-
-· Password: Password1@
