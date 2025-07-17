@@ -1,6 +1,6 @@
 # Overview
 
-[Tummy Time](https://team-06-prj-666-winter-2025.vercel.app/) – A baby care app for parents, caregivers, and medical professionals. Features dynamic feeding schedules, diaper and growth tracking, journaling, AI-driven assistance, exportable health reports, and a gamified quiz to engage users in baby care tracking.
+A baby care app for parents, caregivers, and medical professionals. Features dynamic feeding schedules, diaper and growth tracking, journaling, AI-driven assistance, exportable health reports, and a gamified quiz to engage users in baby care tracking. The app is deployed [here](https://team-06-prj-666-winter-2025.vercel.app/).
 
 # Project Installation Guide
 
